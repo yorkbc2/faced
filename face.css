@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200|Roboto+Slab");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
+  letter-spacing: 0.2px;
+}
+a {
+  color: #0678dc;
+  text-decoration: none;
+}
+a:hover {
+  color: #06788c;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0.4px;
+  color: #47494a;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.5em;
+}
+h3 {
+  font-size: 2em;
+}
+h4 {
+  font-size: 1.5em;
+}
+h5 {
+  font-size: 1em;
+}
+h6 {
+  font-size: 0.5em;
+  color: #808080;
+}
+.fc-block {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 0;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.fc-btn {
+  position: relative;
+  display: block;
+  border: 1px solid #e7e7e7;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.5em;
+  padding: 10px 15px;
+  margin: 10px;
+  box-shadow: 1px 1px 2px #000;
+  outline: none;
+  cursor: pointer;
+}
+.fc-btn:hover {
+  background-color: #e3e3e3;
+}
+.fc-btn.red,
+.fc-btn.green,
+.fc-btn.blue,
+.fc-btn.purple,
+.fc-btn.orange,
+.fc-btn.underline,
+.fc-btn.yellow {
+  outline: none;
+  border-color: transparent;
+  color: #fff;
+}
+.fc-btn.red {
+  background-color: #f33;
+}
+.fc-btn.green {
+  background-color: rgba(0,211,0,0.8);
+}
+.fc-btn.blue {
+  background-color: #42648b;
+}
+.fc-btn.yellow {
+  color: #000;
+  background-color: #e2ff33;
+}
+.fc-btn.yellow-white {
+  color: #fff;
+  background-color: #e2ff33;
+}
+.fc-btn.purple {
+  background-color: rgba(156,0,211,0.8);
+}
+.fc-mid {
+  position: relative;
+  display: block;
+  min-height: 100vh;
+  max-height: 860px;
+  width: 100%;
+  background-image: url("http://file.mobilmusic.ru/17/3a/62/1228948.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.fc-mid.parallax {
+  background-position: center;
+  background-attachment: fixed;
+}
+.fc-filter {
+  width: 100%;
+  min-height: 100vh;
+  max-height: 860px;
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0,0,0,0.4);
+}
+.fc-filter.red {
+  background-color: rgba(110,0,0,0.4);
+}
+.fc-filter.cyan {
+  background-color: rgba(0,125,125,0.4);
+}
+.fc-filter.yellow {
+  background-color: rgba(125,110,0,0.4);
+}
+.fc-filter.purple {
+  background-color: rgba(148,56,148,0.25);
+}
+.fc-filter.blue {
+  background-color: rgba(116,116,228,0.3);
+}
+.fc-filter.green {
+  background-color: rgba(116,228,116,0.3);
+}
+.fc-header {
+  padding: 200px;
+  text-align: center;
+  position: relative;
+  display: block;
+}
+.fc-color.red {
+  color: #f33;
+}
+.fc-color.purple {
+  color: #800080;
+}
+.fc-color.blue {
+  color: #00f;
+}
+.fc-color.green {
+  color: #008000;
+}
+.fc-color.white {
+  color: #fff;
+}
+.fc-color.orange {
+  color: #ffa500;
+}
+.fc-color.tr {
+  color: transparent;
+}
+.fc-color.black {
+  color: #000;
+}
+.fc-bgc.white {
+  background-color: #fff;
+}
+.fc-bgc.black {
+  background-color: #000;
+}
+.fc-bgc.blue {
+  background-color: #0678dc;
+}
+.fc-bgc.purple {
+  background-color: rgba(156,0,211,0.95);
+}
+.fc-bgc.red {
+  background-color: #f33;
+}
+.fc-bgc.green {
+  background-color: rgba(0,211,65,0.95);
+}
+.fc-bgc.orange {
+  background-color: rgba(211,88,0,0.95);
+}
+.fc-bgc.yellow {
+  background-color: rgba(238,242,15,0.95);
+}
+.fc-container {
+  position: relative;
+  margin: 0 20px;
+  padding: 0;
+}
+@media screen and (min-width: 1240px) {
+  .fc-l-1,
+  .fc-l-2,
+  .fc-l-3,
+  .fc-l-4,
+  .fc-l-5,
+  .fc-l-6,
+  .fc-l-7,
+  .fc-l-8,
+  .fc-l-9,
+  .fc-l-10,
+  .fc-l-11,
+  .fc-l-12 {
+    float: left;
+  }
+  .fc-l-1 {
+    width: 8.333333333%;
+  }
+  .fc-l-2 {
+    width: 16.66666666667%;
+  }
+  .fc-l-3 {
+    width: 25%;
+  }
+  .fc-l-4 {
+    width: 33.3333333%;
+  }
+  .fc-l-5 {
+    width: 41.66666666667%;
+  }
+  .fc-l-6 {
+    width: 50%;
+  }
+  .fc-l-7 {
+    width: 58.333333333%;
+  }
+  .fc-l-8 {
+    width: 66.66666666667%;
+  }
+  .fc-l-9 {
+    width: 75%;
+  }
+  .fc-l-10 {
+    width: 83.3333333333%;
+  }
+  .fc-l-11 {
+    width: 91.66666667%;
+  }
+  .fc-l-12 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .fc-m-1,
+  .fc-m-2,
+  .fc-m-3,
+  .fc-m-4,
+  .fc-m-5,
+  .fc-m-6,
+  .fc-m-7,
+  .fc-m-8,
+  .fc-m-9,
+  .fc-m-10,
+  .fc-m-11,
+  .fc-m-12 {
+    float: left;
+  }
+  .fc-m-1 {
+    width: 8.333333333%;
+  }
+  .fc-m-2 {
+    width: 16.66666666667%;
+  }
+  .fc-m-3 {
+    width: 25%;
+  }
+  .fc-m-4 {
+    width: 33.3333333%;
+  }
+  .fc-m-5 {
+    width: 41.66666666667%;
+  }
+  .fc-m-6 {
+    width: 50%;
+  }
+  .fc-m-7 {
+    width: 58.333333333%;
+  }
+  .fc-m-8 {
+    width: 66.66666666667%;
+  }
+  .fc-m-9 {
+    width: 75%;
+  }
+  .fc-m-10 {
+    width: 83.3333333333%;
+  }
+  .fc-m-11 {
+    width: 91.66666667%;
+  }
+  .fc-m-12 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .fc-sm-1,
+  .fc-sm-2,
+  .fc-sm-3,
+  .fc-sm-4,
+  .fc-sm-5,
+  .fc-sm-6,
+  .fc-sm-7,
+  .fc-sm-8,
+  .fc-sm-9,
+  .fc-sm-10,
+  .fc-sm-11,
+  .fc-sm-12 {
+    float: left;
+  }
+  .fc-sm-1 {
+    width: 8.333333333%;
+  }
+  .fc-sm-2 {
+    width: 16.66666666667%;
+  }
+  .fc-sm-3 {
+    width: 25%;
+  }
+  .fc-sm-4 {
+    width: 33.3333333%;
+  }
+  .fc-sm-5 {
+    width: 41.66666666667%;
+  }
+  .fc-sm-6 {
+    width: 50%;
+  }
+  .fc-sm-7 {
+    width: 58.333333333%;
+  }
+  .fc-sm-8 {
+    width: 66.66666666667%;
+  }
+  .fc-sm-9 {
+    width: 75%;
+  }
+  .fc-sm-10 {
+    width: 83.3333333333%;
+  }
+  .fc-sm-11 {
+    width: 91.66666667%;
+  }
+  .fc-sm-12 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .fc-xs-1,
+  .fc-xs-2,
+  .fc-xs-3,
+  .fc-xs-4,
+  .fc-xs-5,
+  .fc-xs-6,
+  .fc-xs-7,
+  .fc-xs-8,
+  .fc-xs-9,
+  .fc-xs-10,
+  .fc-xs-11,
+  .fc-xs-12 {
+    float: left;
+  }
+  .fc-xs-1 {
+    width: 8.333333333%;
+  }
+  .fc-xs-2 {
+    width: 16.66666666667%;
+  }
+  .fc-xs-3 {
+    width: 25%;
+  }
+  .fc-xs-4 {
+    width: 33.3333333%;
+  }
+  .fc-xs-5 {
+    width: 41.66666666667%;
+  }
+  .fc-xs-6 {
+    width: 50%;
+  }
+  .fc-xs-7 {
+    width: 58.333333333%;
+  }
+  .fc-xs-8 {
+    width: 66.66666666667%;
+  }
+  .fc-xs-9 {
+    width: 75%;
+  }
+  .fc-xs-10 {
+    width: 83.3333333333%;
+  }
+  .fc-xs-11 {
+    width: 91.66666667%;
+  }
+  .fc-xs-12 {
+    width: 100%;
+  }
+}
+.fc-nav {
+  width: 100%;
+  position: relative;
+  display: block;
+  z-index: 3;
+  background-color: #fff;
+  border: 1px solid #e7e7e7;
+  box-shadow: 1px 1px 2px #000;
+  padding: 15px 20px;
+  border-color: transparent;
+}
+.fc-bq {
+  color: rgba(0,0,0,0.7);
+  font-style: italic;
+  font-size: 18px;
+}
+.fc-bq::before {
+  content: '"';
+}
+.fc-bq::after {
+  content: '"';
+}
