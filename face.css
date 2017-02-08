@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:200|Roboto+Slab");
+/*
+	Name: Face. Google Material Design CSS Framework
+	Version: 0.1
+	Author: Alex Yorke <durt2701@gmail.com>
+	Next beta version: 0.3
+	Next stable Version: 0.2
+*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -68,13 +75,21 @@ h6 {
 .fc-btn:hover {
   background-color: #e3e3e3;
 }
+.fc-btn:active {
+  background-color: #fff;
+  box-shadow: 0px 0px 4px #ccc inset;
+}
 .fc-btn.red,
 .fc-btn.green,
 .fc-btn.blue,
 .fc-btn.purple,
 .fc-btn.orange,
 .fc-btn.underline,
-.fc-btn.yellow {
+.fc-btn.yellow,
+.fc-btn.yellow-white,
+.fc-btn.black,
+.fc-btn.fluit,
+.fc-btn.fluit-nm {
   outline: none;
   border-color: transparent;
   color: #fff;
@@ -82,22 +97,144 @@ h6 {
 .fc-btn.red {
   background-color: #f33;
 }
+.fc-btn.red:hover {
+  background-color: #ff4d4d;
+}
+.fc-btn.red:active {
+  background-color: #f33;
+  box-shadow: 0px 0px 4px #e60000 inset;
+}
 .fc-btn.green {
   background-color: rgba(0,211,0,0.8);
 }
+.fc-btn.green:hover {
+  background-color: #0c0;
+}
+.fc-btn.green:active {
+  background-color: rgba(0,211,0,0.8);
+  box-shadow: 0px 0px 4px #00b300 inset;
+}
 .fc-btn.blue {
-  background-color: #42648b;
+  background-color: #0678dc;
+}
+.fc-btn.blue:hover {
+  background-color: #045fae;
+}
+.fc-btn.blue:active {
+  background-color: #0678dc;
+  box-shadow: 0px 0px 4px #045fae inset;
 }
 .fc-btn.yellow {
   color: #000;
-  background-color: #e2ff33;
+  background-color: rgba(238,242,15,0.95);
 }
 .fc-btn.yellow-white {
   color: #fff;
-  background-color: #e2ff33;
+  background-color: rgba(238,242,15,0.95);
+}
+.fc-btn.yellow:hover,
+.fc-btn.yellow-white:hover {
+  background-color: #d7da0b;
+}
+.fc-btn.yellow:active,
+.fc-btn.yellow-white:active {
+  background-color: rgba(238,242,15,0.95);
+  box-shadow: 0px 0px 4px #d7da0b inset;
 }
 .fc-btn.purple {
-  background-color: rgba(156,0,211,0.8);
+  background-color: rgba(156,0,211,0.95);
+}
+.fc-btn.purple:hover {
+  background-color: #9600cc;
+}
+.fc-btn.purple:active {
+  background-color: rgba(156,0,211,0.95);
+  box-shadow: 0px 0px 4px #9600cc inset;
+}
+.fc-btn.black {
+  background-color: #000;
+  color: #fff;
+  border: transparent;
+}
+.fc-btn.black:hover {
+  background-color: #1a1a1a;
+}
+.fc-btn.black:active {
+  background-color: #000;
+  box-shadow: 0px 0px 4px #1a1a1a inset;
+}
+.fc-btn.fluit {
+  width: 100%;
+  text-align: center;
+  margin: 5px 0;
+}
+.fc-btn.fluit:hover {
+  background-color: #ff4d4d;
+}
+.fc-btn.fluit:active {
+  background-color: #f33;
+  box-shadow: 0px 0px 4px #e60000 inset;
+}
+.fc-btn.fluit-nm {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  border-bottom: 1px solid #fff;
+}
+.fc-btn.fluit-nm:hover {
+  background-color: #ff4d4d;
+}
+.fc-btn.fluit-nm:active {
+  background-color: #f33;
+  box-shadow: 0px 0px 4px #e60000 inset;
+}
+.fc-btn.underline {
+  color: #000;
+  border-color: transparent;
+}
+.fc-btn.underline::after {
+  content: "";
+  height: 1px;
+  width: 0%;
+  border: 1px solid #000;
+  background-color: #000;
+  position: absolute;
+  bottom: -0.5px;
+  left: -1px;
+  transition: width 0.5s ease-in-out;
+}
+.fc-btn.underline:hover::after {
+  width: 100%;
+}
+.fc-btn.underline.red,
+.fc-btn.underline.green,
+.fc-btn.underline.blue,
+.fc-btn.underline.purple,
+.fc-btn.underline.black,
+.fc-btn.underline.orange {
+  color: #fff;
+  color: #fff;
+}
+.fc-btn.underline.red::after,
+.fc-btn.underline.green::after,
+.fc-btn.underline.blue::after,
+.fc-btn.underline.purple::after,
+.fc-btn.underline.black::after,
+.fc-btn.underline.orange::after {
+  background-color: #fff;
+  border-color: #fff;
+}
+.fc-btn.underline.yellow,
+.fc-btn.underline.yellow-white {
+  color: #000;
+}
+.fc-btn.underline.yellow::after,
+.fc-btn.underline.yellow-white::after {
+  background-color: #000;
+  border-color: #000;
+}
+.fc-btn.underline.yellow-white {
+  color: #fff;
 }
 .fc-mid {
   position: relative;
@@ -151,19 +288,19 @@ h6 {
   color: #f33;
 }
 .fc-color.purple {
-  color: #800080;
+  color: rgba(156,0,211,0.95);
 }
 .fc-color.blue {
-  color: #00f;
+  color: #0678dc;
 }
 .fc-color.green {
-  color: #008000;
+  color: rgba(0,211,65,0.95);
 }
 .fc-color.white {
   color: #fff;
 }
 .fc-color.orange {
-  color: #ffa500;
+  color: rgba(211,88,0,0.95);
 }
 .fc-color.tr {
   color: transparent;
@@ -171,29 +308,61 @@ h6 {
 .fc-color.black {
   color: #000;
 }
+.fc-color.a-red a {
+  color: #f33;
+}
+.fc-color.a-purple a {
+  color: rgba(156,0,211,0.95);
+}
+.fc-color.a-green a {
+  color: rgba(0,211,65,0.95);
+}
+.fc-color.a-blue a {
+  color: #0678dc;
+}
+.fc-color.a-white a {
+  color: #fff;
+}
+.fc-color.a-orange a {
+  color: rgba(211,88,0,0.95);
+}
+.fc-color.a-tr a {
+  color: transparent;
+}
+.fc-color.a-black a {
+  color: #000;
+}
 .fc-bgc.white {
   background-color: #fff;
+  color: #000;
 }
 .fc-bgc.black {
   background-color: #000;
+  color: #fff;
 }
 .fc-bgc.blue {
   background-color: #0678dc;
+  color: #fff;
 }
 .fc-bgc.purple {
   background-color: rgba(156,0,211,0.95);
+  color: #fff;
 }
 .fc-bgc.red {
   background-color: #f33;
+  color: #fff;
 }
 .fc-bgc.green {
   background-color: rgba(0,211,65,0.95);
+  color: #fff;
 }
 .fc-bgc.orange {
   background-color: rgba(211,88,0,0.95);
+  color: #fff;
 }
 .fc-bgc.yellow {
   background-color: rgba(238,242,15,0.95);
+  color: #000;
 }
 .fc-container {
   position: relative;
@@ -418,6 +587,28 @@ h6 {
   box-shadow: 1px 1px 2px #000;
   padding: 15px 20px;
   border-color: transparent;
+}
+.fc-nav ul {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: block;
+}
+.fc-nav ul li {
+  display: inline-block;
+  list-style: none;
+  position: relative;
+  padding: 10px 15px;
+}
+.fc-nav ul.upper li {
+  text-transform: uppercase;
+}
+.fc-nav ul.upper li a {
+  text-transform: uppercase;
+}
+.fc-nav.fixed {
+  position: fixed;
+  width: 100%;
 }
 .fc-bq {
   color: rgba(0,0,0,0.7);
