@@ -86,9 +86,19 @@ FaceDesign - это CSS фреймворк, который помогает со
 * yellow
 * yellow-white
 * purple
-```html
-		<button class='fc-btn green'></button>
+* underline
 
+```html
+		<button class='fc-btn green'>Green Button</button>
+
+```
+
+#### .fc-btn underline
+
+Эффект для кнопки. При наводке появляется нижнее подчеркивание, которое плавно уходит.
+
+```html
+<button class='fc-btn green underline'>Underline Button</button>
 ```
 
 ### fc-filter
