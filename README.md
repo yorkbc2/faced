@@ -20,6 +20,8 @@ FaceDesign - это CSS фреймворк, который помогает со
 
 ## Классы
 
+## Колонки
+
 ### fc-container	
 Блок, который нужен для правильного отображения колонок.
 ```html
@@ -28,6 +30,22 @@ FaceDesign - это CSS фреймворк, который помогает со
 			<div class="fc-l-6"></div>
 		</div>
 ```
+### fc-*
+
+Класс, который создает колонки. Имеет ряд доступных размеров колонок : от 1 до 12. 
+
+```html
+		<div class='fc-3'></div>
+		<div class='fc-9'></div>
+```
+
+### fc-offset-*
+Класс, который создает пространство слева от блока. Взаимодействует с колонками.
+
+```html
+<div class='fc-offset-2 fc-8'></div>
+```
+
 ### fc-l-*
 Класс, который создает колонки больших размеров. Существует несколько размеров колонок. От fc-l-1 до fc-l-12. 
 ```html
@@ -62,6 +80,42 @@ FaceDesign - это CSS фреймворк, который помогает со
 		<div class="fc-xs-3"></div>
 ```
 
+## Навигатор ( alpha version )
+
+### fc-nav
+Для создания навигатора, блоку необходимо указать класс .fc-nav. Он уже создаст стилизированый навигатор. Далее, в блоке нужно создать список, который сразу превратиться в ячейки навигатора. 
+```html
+<div class='fc-nav'>
+<ul>
+<li><a href='#'>Main</a></li>
+<li><a href='#'>FAQ</a></li>
+<li><a href='#'>Face</a></li>
+</ul>
+</div>
+```
+
+Также, навигатор можно менять с помощью уже созданных классов, например fc-bgc :
+
+
+```html
+<div class='fc-nav fc-bgc red'>
+<ul>
+<li><a href='#'>Main</a></li>
+<li><a href='#' class='fc-color black'>FAQ</a></li>
+<li><a href='#'>Face</a></li>
+</ul>
+</div>
+```
+
+### *.fc-fixed
+
+Навигатор также можно фиксировать : 
+```html
+<div class='fc-nav fc-fixed'>/.../</div>
+```
+
+## Полноэкранные блоки
+
 ### fc-mid
 Полноэкранный блок с фоном-картинкой, который сейчас в моде. Имеет эффект параллакса при добавлении класса 'parallax'
 ```html
@@ -77,29 +131,9 @@ FaceDesign - это CSS фреймворк, который помогает со
 		</div>
 ```
 
-### fc-btn, fc-btn *
-Класс, который стилизирует кнопки. Имеет уже заданые тени, цвета, хотя может меняться. 
-Список доступных цветов :
-* red
-* green
-* blue
-* yellow
-* yellow-white
-* purple
-* underline
 
-```html
-		<button class='fc-btn green'>Green Button</button>
 
-```
 
-#### .fc-btn underline
-
-Эффект для кнопки. При наводке появляется нижнее подчеркивание, которое плавно уходит.
-
-```html
-<button class='fc-btn green underline'>Underline Button</button>
-```
 
 ### fc-filter
 Обычно используется в блоке 'fc-mid'. Класс создает фильтр с цветом, который по стандарту является серым. Можно выбрать другой цвет с помощью классов: 
@@ -129,11 +163,13 @@ FaceDesign - это CSS фреймворк, который помогает со
 			</div>
 		</div>
 ```
+## Доп. материал
 
-### fc-block
-Блок, который служит для создания полноэкранных елементов.
+### fc-item
+Элемент, который создан для стилизации блоков с новостями, постами, прочем...
+
 ```html
-		<div class='fc-block'></div>
+<div class='fc-item'>/.../</div>
 ```
 
 ### fc-color
@@ -166,15 +202,47 @@ FaceDesign - это CSS фреймворк, который помогает со
 		<div class='fc-bgc orange'>Welcome to Face CSS Framework</div>
 ```
 
+### fc-btn, fc-btn *
+Класс, который стилизирует кнопки. Имеет уже заданые тени, цвета, хотя может меняться. 
+Список доступных цветов :
+* red
+* green
+* blue
+* yellow
+* yellow-white
+* purple
+* underline
+
+```html
+		<button class='fc-btn green'>Green Button</button>
+
+```
+
+#### .fc-btn underline
+
+Эффект для кнопки. При наводке появляется нижнее подчеркивание, которое плавно уходит.
+
+```html
+<button class='fc-btn green underline'>Underline Button</button>
+```
+
 ### fc-bq
 Класс, который стилизирует текст как цитату
 ```html
 		<div class='fc-bq'>To be or not to be...</div>
 ```
+
+### fc-t*
+Позиционирование текста с помощью text-aligin. Значения, которые принимает класс :
+* fc-tr ( right )
+* fc-tl ( left )
+* fc-tc ( center )
+
+
 ## О фреймворке
 
 #### Автор: Alex Yorke / yorkbc2 / <yorkbc2@gmail.com>
-#### Версия: 0.1 
-#### Next beta version: 0.3
+#### Версия: 0.3
+#### Next beta version: 0.5
 #### Next stable version: 0.2
 #### Название: Face. Google Material Design CSS Framework
