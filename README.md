@@ -161,3 +161,10 @@ FaceDesign - это CSS фреймворк, который помогает со
 ```html
 		<div class='fc-bq'>To be or not to be...</div>
 ```
+## О фреймворке
+
+#### Автор: Alex Yorke / yorkbc2 / <yorkbc2@gmail.com>
+#### Версия: 0.1 
+#### Next beta version: 0.3
+#### Next stable version: 0.2
+#### Название: Face. Google Material Design CSS Framework
