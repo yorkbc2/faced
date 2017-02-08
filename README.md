@@ -155,3 +155,9 @@ FaceDesign - это CSS фреймворк, который помогает со
 ```html
 		<div class='fc-bgc orange'>Welcome to Face CSS Framework</div>
 ```
+
+### fc-bq
+Класс, который стилизирует текст как цитату
+```html
+		<div class='fc-bq'>To be or not to be...</div>
+```
