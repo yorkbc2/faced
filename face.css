@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:200|Roboto+Slab");
 /*
 	Name: Face. Google Material Design CSS Framework
-	Version: 0.1
+	Version: 0.3
 	Author: Alex Yorke <durt2701@gmail.com>
-	Next beta version: 0.3
+	Next beta version: 0.5
 	Next stable Version: 0.2
 */
 * {
@@ -50,14 +50,19 @@ h6 {
   font-size: 0.5em;
   color: #808080;
 }
-.fc-block {
+.fc-item {
   position: relative;
   display: block;
-  width: 100%;
+  margin: 10px;
+  padding: 5px 10px;
+  min-width: 240px;
+  max-width: 480px;
   min-height: 0;
-  max-height: 100%;
-  margin: 0;
-  padding: 0;
+  max-height: 560px;
+  box-shadow: 1px 1px 2px #000;
+  border: 1px solid #e7e7e7;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .fc-btn {
   position: relative;
@@ -278,12 +283,6 @@ h6 {
 .fc-filter.green {
   background-color: rgba(116,228,116,0.3);
 }
-.fc-header {
-  padding: 200px;
-  text-align: center;
-  position: relative;
-  display: block;
-}
 .fc-color.red {
   color: #f33;
 }
@@ -364,10 +363,112 @@ h6 {
   background-color: rgba(238,242,15,0.95);
   color: #000;
 }
+.fc-offset-1,
+.fc-offset-2,
+.fc-offset-3,
+.fc-offset-4,
+.fc-offset-5,
+.fc-offset-6,
+.fc-offset-7,
+.fc-offset-8,
+.fc-offset-9,
+.fc-offset-10,
+.fc-offset-11,
+.fc-offset-12 {
+  float: left;
+  min-height: 1px;
+}
+.fc-offset-1 {
+  margin-left: 8.33333333%;
+}
+.fc-offset-2 {
+  margin-left: 16.66666666667%;
+}
+.fc-offset-3 {
+  margin-left: 25%;
+}
+.fc-offset-4 {
+  margin-left: 33.3333333%;
+}
+.fc-offset-5 {
+  margin-left: 41.66666666667%;
+}
+.fc-offset-6 {
+  margin-left: 50%;
+}
+.fc-offset-7 {
+  margin-left: 58.333333333%;
+}
+.fc-offset-8 {
+  margin-left: 66.66666666667%;
+}
+.fc-offset-9 {
+  margin-left: 75%;
+}
+.fc-offset-10 {
+  margin-left: 83.3333333333%;
+}
+.fc-offset-11 {
+  margin-left: 91.66666667%;
+}
+.fc-offset-12 {
+  margin-left: 100%;
+}
 .fc-container {
   position: relative;
   margin: 0 20px;
   padding: 0;
+}
+.fc-1,
+.fc-2,
+.fc-3,
+.fc-4,
+.fc-5,
+.fc-6,
+.fc-7,
+.fc-8,
+.fc-9,
+.fc-10,
+.fc-11,
+.fc-12 {
+  float: left;
+  min-height: 1px;
+}
+.fc-1 {
+  width: 8.333333333%;
+}
+.fc-2 {
+  width: 16.66666666667%;
+}
+.fc-3 {
+  width: 25%;
+}
+.fc-4 {
+  width: 33.3333333%;
+}
+.fc-5 {
+  width: 41.66666666667%;
+}
+.fc-6 {
+  width: 50%;
+}
+.fc-7 {
+  width: 58.333333333%;
+}
+.fc-8 {
+  width: 66.66666666667%;
+}
+.fc-9 {
+  width: 75%;
+}
+.fc-10 {
+  width: 83.3333333333%;
+}
+.fc-11 {
+  width: 91.66666667%;
+}
+.fc-12 {
+  width: 100%;
 }
 @media screen and (min-width: 1240px) {
   .fc-l-1,
@@ -383,6 +484,7 @@ h6 {
   .fc-l-11,
   .fc-l-12 {
     float: left;
+    min-height: 1px;
   }
   .fc-l-1 {
     width: 8.333333333%;
@@ -620,4 +722,17 @@ h6 {
 }
 .fc-bq::after {
   content: '"';
+}
+.fc-tc {
+  text-align: center;
+}
+.fc-tl {
+  text-align: left;
+}
+.fc-tr {
+  text-align: right;
+}
+.fc-header {
+  padding: calc(100% / 4) 0 0 0;
+  text-align: center;
 }
