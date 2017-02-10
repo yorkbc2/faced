@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:200|Roboto+Slab");
+@import url("https://fonts.googleapis.com/css?family=Raleway:200|Roboto+Slab|Roboto");
 /*
 	Name: Face. Google Material Design CSS Framework
 	Version: 0.3
@@ -50,23 +50,53 @@ h6 {
   font-size: 0.5em;
   color: #808080;
 }
-.fc-item {
+.fc-item,
+.fc-item-static,
+.fc-item-full {
   position: relative;
-  display: block;
+  display: inline-block;
   margin: 10px;
-  padding: 5px 10px;
+  padding: 25px 25px;
   min-width: 240px;
-  max-width: 480px;
+  max-width: 360px;
   min-height: 0;
-  max-height: 560px;
-  box-shadow: 1px 1px 2px #000;
+  max-height: 420px;
+  box-shadow: 0px 1px 1px #000;
   border: 1px solid #e7e7e7;
   overflow-x: hidden;
   overflow-y: auto;
 }
+.fc-item-static {
+  width: 360px;
+  height: 420px;
+}
+.fc-item-full {
+  min-width: calc(100% - 4px);
+  max-width: calc(100% - 4px);
+  height: 420px;
+
+}
+
+button {
+  border-radius: 0;
+  border: 1px solid #e7e7e7;
+  font-size: 1.1em;
+  padding: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 0 1px 1px #000;
+  outline: none;
+}
+button:hover {
+  background-color: #f3f3f3;
+}
+button:active {
+  box-shadow: 0px 0px 3px #000 inset;
+}
+
 .fc-btn {
+  text-align: center;
   position: relative;
-  display: block;
   border: 1px solid #e7e7e7;
   background-color: #fff;
   color: #000;
@@ -241,6 +271,14 @@ h6 {
 .fc-btn.underline.yellow-white {
   color: #fff;
 }
+
+.fc-btn.l,
+.fc-btn.lg {
+  padding: 25px 40px;
+  font-family: "Raleway", "Roboto";
+  font-weight: 300;
+}
+
 .fc-mid {
   position: relative;
   display: block;
@@ -679,6 +717,15 @@ h6 {
     width: 100%;
   }
 }
+
+.fc-2 .fc-item-full,
+.fc-l-2 .fc-item-full,
+.fc-m-2 .fc-item-full,
+.fc-sm-2 .fc-item-full,
+.fc-xs-2 .fc-item-full {
+  margin: 0;
+  padding: 25px;
+}
 .fc-nav {
   width: 100%;
   position: relative;
@@ -689,6 +736,7 @@ h6 {
   box-shadow: 1px 1px 2px #000;
   padding: 15px 20px;
   border-color: transparent;
+  z-index: 4;
 }
 .fc-nav ul {
   margin: 0;
